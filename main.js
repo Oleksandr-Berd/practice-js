@@ -1,21 +1,9 @@
-const howMuchILoveYou = (nbPetals) => {
-  const phrases = [
-    "I love you",
-    "a little",
-    "a lot",
-    "passionately",
-    "madly",
-    "not at all",
-  ];
-    
-    
-    
- return phrases[
-   nbPetals > phrases.length
-     ? nbPetals % phrases.length - 1
-     : nbPetals - 1
- ];
-}
+const min =  (list) => {
+  return Math.min(...list);
+};
 
-console.log(howMuchILoveYou(203));
+const max =  (list) => {
+  return Math.max(...list);
+};
 
+console.log(min([1, 2, 3, 4, 5, 6, 7, 8, 9]), max([1, 2, 3, 4, 5, 6, 7, 8, 9]));
